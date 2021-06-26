@@ -1,0 +1,258 @@
+html {
+    width: max-content;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.k-scroller {
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.k-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.p8 {
+    padding: 8px;
+}
+
+.p12 {
+    padding: 12px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.k-flex {
+    display: flex;
+}
+
+.k-keyboard-wrap {
+    max-width: 960px;
+    min-width: 960px;
+    width: 100%;
+    background: #aaabad;
+    border-radius: 20px;
+    padding: 8px 0 0;
+    /* background-image: linear-gradient(-180deg, #95969a 4%, #797b7e 46%, #43444859 96%); */
+}
+
+.k-shadow-wrap {
+    box-shadow: inset 3px 3px 4px 0 #5A5B63, inset -3px -3px 4px 0 #5A5B63;
+    padding: 8px 12px;
+    margin: 0 8px;
+    border-radius: 8px;    
+}
+
+.k-sound-card {
+    width: 32px;
+    background-color: #00000005;
+    max-height: 276px;
+    margin: 40px 0;
+    background-image: radial-gradient(#0000000d 10%, transparent 11%), radial-gradient(#26262b 10%, transparent 11%);
+    background-size: 5px 5px;
+    background-position: 10px 10px;
+    background-repeat: repeat;
+}
+
+.k-touch-pad {
+    width: 292px;
+    height: 182px;  
+    border-radius: 10px; 
+    margin: 0 auto;
+    box-shadow: inset 2px 2px 2px 0 #5a5b63, inset -2px -3px 2px 0 #5a5b63;
+    margin-bottom: 8px;
+}
+
+.k-bottom-shadow {
+    width: 120px;
+    box-shadow: inset 5px 5px 5px 0 #595a5f;
+    margin: 0 auto;
+    padding: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: #25262B;
+    color: #8D8F92;
+    width: 100%;
+    list-style-type: none;
+    margin: 4px 6px;
+    border-radius: 6px;
+    height: 35px;
+    min-width: 35px;
+    list-style-type: none;
+    padding: 5px;
+    box-shadow: inset 2px 2px 2px 0 #1d1e22, inset -2px -3px 2px 0 #1d1e22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.k-arrow-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.k-arrow-wrap {
+    min-width: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px 6px;
+    justify-content: space-around;
+}
+
+.k-arrow {
+    height: 10px;
+}
+
+.k-arrow-wrap .k-arrow {
+    margin: 0;
+}
+
+.k-arrow-wrap .k-arrow:first-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.k-arrow-wrap .k-arrow:last-child {
+    margin-top: 1px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.k-funkeys {
+    font-size: 8px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+
+li:focus {
+    outline: 0;
+    color: #fff;
+}
+
+li:before {
+    content: '';
+    background-color: #f0f8ff6e;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.001, 0.001);
+    border-radius: 8px;
+}
+
+li:focus::before {
+    animation: effect_dylan 0.8s ease-out;
+}
+
+@keyframes effect_dylan {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+.k-flex-end {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.k-flex-start {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.k-flex-as-fe {
+    align-self: flex-end;
+}
+
+.k-flex-sb {
+    justify-content: space-between;
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.k-fs20 {
+    font-size: 20px;
+}
+
+.w60 {
+    width: 60px;
+    min-width: 60px;
+}
+
+.w50 {
+    width: 50px;
+    min-width: 50px;
+}
+
+.w70 {
+    width: 70px;
+    min-width: 70px;
+}
+
+.w96 {
+    width: 96px;
+    min-width: 96px;
+}
+
+.w236 {
+    width: 236px;
+    min-width: 236px;
+}
+
+
+@media(max-width: 960px) {
+    body {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
